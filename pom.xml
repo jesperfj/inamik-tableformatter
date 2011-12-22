@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.inamik</groupId>
+    <version>0.96.2-SNAPSHOT</version>
+    <artifactId>inamik-tableformatter</artifactId>
+    <name>inamik-tableformatter</name>
+    <scm>
+        <connection>scm:git:https://github.com/jesperfj/inamik-tableformatter.git</connection>
+        <developerConnection>scm:git:git@github.com:jesperfj/inamik-tableformatter.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/jesperfj/inamik-tableformatter.git</url>
+    </scm>
+
+    <distributionManagement>
+      <repository>
+        <id>gh-pages</id>
+        <url>file:///${basedir}/release-repo/repository/</url>
+      </repository>
+    </distributionManagement>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.10</version>
+          <scope>test</scope>
+      </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
